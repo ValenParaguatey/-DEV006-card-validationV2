@@ -5,8 +5,123 @@
 }
 
 body {
-    background-color: #f7eeee;
+    background-image: linear-gradient(rgba(41,24,21,0.5),rgba(41,24,21,0.9)),url('https://www.shutterstock.com/image-photo/attractive-stylish-smiling-woman-choosing-260nw-1071790259.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
+
+/*BARRA DE NAVEGACIÓN*/
+#navigation .logotipo { 
+    width: 70px;
+    height: 80px;
+}
+div#navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9B5D0;
+}
+ul#main-nav {
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+#main-nav li {
+    padding: 12px 0.85em;
+}
+#main-nav li a {
+    color: #DF7857;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    padding-bottom: 12px;
+}
+#main-nav li a:hover { 
+    border-bottom: 2px solid #CE7777;
+}
+#navigation  .enlace {
+    color: #DF7857;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    border: 1px solid #F55050;
+    padding: 12px 3em;
+    transition: all 0.5s;
+}
+#navigation  .enlace:hover {
+    background-color: #F48484;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+nav {
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+}
+/*Sección 1*/
+#seccion1 {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 500px;
+}
+#seccion1 h1 {
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #DF7857;
+    text-shadow: 5px 3px 0 #000;
+}
+#seccion1 p {
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+}
+
+#seccion1 .enlace {
+    color: #DF7857;
+    text-transform: uppercase;
+    font-size: 35px;
+    padding: 15px 8px;
+   display: block;
+  text-align: center;
+  margin-top: 130px;
+}
+
+
+/*Sección 2*/
+#seccion2 {
+    display: flex;
+    margin: 25px 0;
+}
+ h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #DF7857;
+    text-shadow: 2px 2px 0 #000;
+    text-align: center;
+}
+#seccion2 img {
+    width: 410px;
+    height: 330px;
+}
+
+#seccion2 div {
+    margin: 5px 5px;
+    box-shadow: -2px 2px 2px #ccc, 2px 4px 1px #ccc;
+    padding-bottom: 3px;
+}
+#seccion2 h3{
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+/*Seccion tarjeta*/
 
 .contenedor-tarjeta { 
     width: 100%;
@@ -27,7 +142,7 @@ body {
     justify-content: space-between;
     width: 50%;
     max-height: 400px;
-    background-color: aqua;
+    background-image: url('https://thumbs.dreamstime.com/z/pretty-purple-pink-marbled-glassy-texture-design-abstract-watercolor-style-splashes-blotches-soft-backgro-crinkled-107770111.jpg');
     z-index: 2;
     
 }
@@ -42,9 +157,8 @@ body {
 
 .contenedor-tarjeta .chip-tarjeta img {
     width: 100%;
-    max-width: 60px;
-    margin-bottom: 20px;
-    margin-top: 5px;
+    max-width: 45px;
+    margin-bottom: 15px;
     background-color: transparent;
   
 
@@ -57,16 +171,17 @@ body {
 }
 
 .tarjeta .titulo {
-    color: #510aeb;
-    font-size: 15px;
+    color: #000;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 3px;
   
 }
 
 .tarjeta .numero, .nombre, .expiracion { 
-    color: #000;
-    font: 22px;
+    color: #29012d;
+    font-size: 18px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -80,7 +195,7 @@ body {
 .tarjeta #ccv {
     text-align: center;
     margin-top: 15px;
-    color: #510aeb;
+    color: #F9B5D0;
     font-size: 15px;
     font-weight: bold;
 }
@@ -93,24 +208,24 @@ body {
     height: 45px;
     border-radius: 15px;
     background-color: #f1d6d6;
-    color: #510aeb;
+    color: #FF597B;
     margin: 12px 15px;
     position: relative;
     top: -30px;
     z-index: 3;
 }
 .btn .btn-formulario:hover {
-    background-color: #510aeb;
+    background-color: #FF8E9E;
     color: #fff;
 }
 .btn .btn-formulario.active {
-    background-color: #510aeb;
+    background-color: #FFACAC;
     color: #000;
 }
 
 /*Formulario*/
 .formulario-tarjeta {
-    background-color: #878484;
+    background-color: #FFBFA9;
     padding: 160px 50px 30px 30px;
     width: 100%;
     max-width: 600px;
@@ -126,15 +241,15 @@ body {
 }
 
 .formulario-tarjeta label {
-    color: #000;
-    font-size: 15px;
+    color: #FF597B;
+    font-size: 20px;
     margin-bottom: 5px;
     display: block;
 }
 
 .formulario-tarjeta input, select {
     border-radius: 10px;
-    border: 2px solid #510aeb;
+    border: 2px solid #FFACAC;
     font-size: 16px;
     height: 40px;
     width: 100%;
@@ -148,4 +263,41 @@ body {
 
 #expira select{
     margin-bottom: 10px;
+}
+
+#botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+#botones #btn-registro {
+    font-size: 11px;
+    font-weight: bold;
+    width: 90px;
+    height: 50px;
+    border-radius: 18px;
+    background-color: #f1d6d6;
+    color: #FF597B;
+    margin-top: 20px;
+}
+
+#botones #btn-reset {
+    font-size: 12px;
+    font-weight: bold;
+    width: 90px;
+    height: 50px;
+    border-radius: 18px;
+    background-color: #f1d6d6;
+    color: #FF597B;  
+    margin-top: 20px;
+}
+
+#botones #btn-registro:hover {
+    background-color: #FF8E9E;
+    color: #fff;
+}
+
+#botones #btn-reset:hover {
+    background-color: #FF8E9E;
+    color: #fff;  
 }

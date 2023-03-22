@@ -23,6 +23,13 @@
       {
         "duplicate-id-active": "off"
       }
-    ]
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "button-type": "off"
   }
 }

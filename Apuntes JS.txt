@@ -1,0 +1,19 @@
+Expresión regular para poder identificar los espacios en blanco
+(/\s/g) Para poder reemplazarlo por otra cosa se usa el método "replace"-->
+.replace(/\s/g,'');
+
+- Evento 'change' permite que se ejecute el codigo cada vez que se cambia el Select. Se usa este método cuando se trabaja con 'Select'
+-Con Input, si se trabaja con 'Keyup' para activar un evento
+
+
+Algoritmo de Luhn
+1- Primero definir la función que toma el número de la tarjeta de crédito como argumento
+2- Dentro de la función se  declara una variable "Sum" Inicia con 0. Esta variable se usará para realizar calculos a medida que se procesa el número de la tarjeta de crédito 
+3- Se declara una variable "longitudNumero" la cual se le asigna la longitud del número de tarjeta de crédito.
+4- Se declara una variable "numeroPar" y se le asigna un valor (longitudNumero % 2 ) Para saber si multiplica por 2 cada segundo digito
+5-Se inicia un bucle for que recorre cada dígito del número de tarjeta de crédito, comenzando por el dígito más a la izquierda y avanzando hacia la derecha.
+6-En cada iteración del bucle, se declara una variable llamada "actualDigit" y se le asigna el valor del dígito actual.
+7-Si el valor de "numeroPar" es igual a (longitudNumero % 2 ), se multiplica "actualDigit" por 2. De lo contrario, actualDigit se deja sin modificar.
+8-Si el resultado de la multiplicación anterior es mayor que 9, se resta 9 del resultado y se agrega al valor de sum. De lo contrario, se agrega directamente el resultado al valor de sum
+9-Después de procesar el dígito actual, se cambia el valor de "numeroPar" alternando entre 0 y 1.
+10-  vez que se han procesado todos los dígitos del número de tarjeta de crédito, se verifica si sum es divisible por 10. Si es así, el número de tarjeta de crédito es válido y la función devuelve true. De lo contrario, la función devuelve false.

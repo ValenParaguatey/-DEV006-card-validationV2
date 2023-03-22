@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="contenedor-tarjeta">
+        <section class="tarjeta" id="tarjeta">
+            <div class="frente">
+                <div class="logo-banco">
+                    <img src="https://1000marcas.net/wp-content/uploads/2019/12/Visa-Logo-2005.jpg"  alt="logo-visa" width="300px" height="300px">
+                </div>
+                <div class="chip-tarjeta">
+                    <img src="https://previews.123rf.com/images/alancotton/alancotton1511/alancotton151100211/48042691-de-cerca-de-un-chip-de-tarjeta-de-cr%C3%A9dito.jpg" alt="chip-tarjeta">
+                </div>
+                <div class="datos-tarjeta">
+                    <div class="dato" id="numero">
+                        <p class="titulo">Número de la Tarjeta</p>
+                        <p class="numero"> #### #### #### ####</p>
+                    </div>
+                    <div class="columnas">
+                        <div class="dato" id="nombre">
+                            <p class="titulo">Nombre del Usuario</p>
+                            <p class="nombre">XXXX</p>
+                        </div>
+                        <div class="dato" id="expiracion">
+                            <p class="titulo">Fecha de expiración</p>
+                            <p class="expiracion"> <span class="mes">MM</span> / <span class="year">AA</span> </p>
+                        </div>
+           
+                    </div>
+            </div>
+            <div class="trasera">
+                <div class="barra"></div>
+                <div class="datos-tarjeta">
+                    <div class="dato" id="ccv">
+                        <p class="titulo">CCV</p>
+                        <p class="ccv"></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <div class="btn">
+         <button class="btn-formulario" id="btn-formulario"> Validar Formulario</button>  
+        </div>
+
+        <form action="" id="formulario-tarjeta" class="formulario-tarjeta" >
+            <div class="dato">
+                <label for="NumeroTarjeta">Número de la tarjeta</label>
+                <input type="text" id="NumeroTarjeta" maxlength="16" >
+            </div>
+            <div class="dato">
+                <label for="NombreTarjeta">Nombre del Usuario</label>
+                <input type="text" id="NombreTarjeta" maxlength="16" >
+            </div>
+            <div class="columnas">
+                <div class="dato" id="expira">
+                    <label for="SelectMes">Fecha de expiración</label>
+                    <div class="columnas">
+                        <select name="mes" id="SelectMes">
+                            <option disabled selected>Mes</option>
+                        </select>
+                        <select name="year" id="SelectYear">
+                            <option disabled selected>Año</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="dato cvv">
+                    <label for="inputCVV">CVV</label>
+                    <input type="text" id="inputCVV" maxlength="3">
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

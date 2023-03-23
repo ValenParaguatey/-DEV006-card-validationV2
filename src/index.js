@@ -102,10 +102,15 @@ btnRegistro.addEventListener('click', () => {
   } else {
     mensajeValidacion.textContent = 'Tu tarjeta ' + ocultar + ' No fue aceptada, por favor prueba de nuevo o selecciona otro método de pago'
   }
-
+ 
   formulario.appendChild(mensajeValidacion);
 
+  setTimeout(() => {
+    mensajeValidacion.remove();
+  },3000);
+  
 });
+
 
 
 

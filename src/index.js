@@ -55,12 +55,12 @@ formulario.NumeroTarjeta.addEventListener('keyup', (e) => {
   datoNumero.textContent = valorIngresado
 
   //Mostrar logo Visa o Mastercard
-  if (valorIngresado[0] === "4") {
+  if (valorIngresado[0] === '4') {
     logoBanco.innerHTML = '';
     const imagen = document.createElement('img');
     imagen.src = 'https://aerolatinnews.com/wp-content/uploads/2017/11/visa.png'
     logoBanco.appendChild(imagen);
-  } else if (valorIngresado[0] === "5") {
+  } else if (valorIngresado[0] === '5') {
     logoBanco.innerHTML = '';
     const imagen = document.createElement('img');
     imagen.src = 'https://upload.wikimedia.org/wikipedia/commons/7/72/MasterCard_early_1990s_logo.png'
